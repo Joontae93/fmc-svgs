@@ -537,7 +537,7 @@ var _vendors = require("./modules/vendors");
 (0, _vendors.sayHello)();
 console.log("hello world?");
 
-},{"./modules/vendors":"5PTFQ","../sass/main.scss":"5Izhf"}],"5PTFQ":[function(require,module,exports) {
+},{"../sass/main.scss":"5Izhf","./modules/vendors":"5PTFQ"}],"5Izhf":[function() {},{}],"5PTFQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "sayHello", ()=>sayHello);
@@ -575,6 +575,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"5Izhf":[function() {},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8660")
+},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8660")
 
 //# sourceMappingURL=index.975ef6c8.js.map

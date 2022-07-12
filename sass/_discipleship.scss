@@ -1,5 +1,10 @@
 @use './abstracts' as *;
-
+#discipleship {
+    svg {
+        height:20em;
+        width:20em;
+    }
+}
 #Gather {
     .cls-1 {
         &:nth-child(1) {
@@ -37,8 +42,6 @@
         &:nth-child(2) {
             fill: green;
         }
-
-        &:nth-child(3) {}
     }
 }
 

@@ -6,12 +6,11 @@ body {
 .container {
   padding: 2em;
   position: relative;
-  overflow: visible;
 }
 
 svg {
-  width: 10em;
-  height: 10em;
+  max-width: 80vw;
+  max-height: 80vh;
   transition: all .2s;
   position: relative;
 }
@@ -26,6 +25,8 @@ svg .cls-1 {
 
 #discipleship {
   background-color: #545454;
+  justify-content: center;
+  display: flex;
 }
 
 #values {
@@ -34,6 +35,13 @@ svg .cls-1 {
 
 #ehd {
   background-color: #fff;
+  justify-content: center;
+  display: flex;
+}
+
+#discipleship svg {
+  height: 20em;
+  width: 20em;
 }
 
 #Gather .cls-1:nth-child(1) {
@@ -77,6 +85,11 @@ svg .cls-1 {
 
 #Go .cls-1:nth-child(1) {
   fill: red;
+}
+
+#values svg {
+  min-height: 70vh;
+  max-height: 80vh;
 }
 
 #values .cls-1 {
@@ -448,6 +461,10 @@ svg .cls-1 {
 
 #values .cls-91 {
   mask: url("#mask-6");
+}
+
+#ehd svg {
+  width: 50%;
 }
 
 #ehd .cls-1 {
