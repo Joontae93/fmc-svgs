@@ -1,0 +1,197 @@
+@mixin fadeIn($delay: 0.25) {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: #{$delay}s;
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+svg {
+    width: 10em;
+    height: 10em;
+    transition: all 0.2s ease;
+    position: relative;
+
+    .cls-1 {
+        position: absolute;
+        stroke: white;
+        stroke-width: 5px;
+        stroke-miterlimit: 10;
+        fill: #003a5d;
+    }
+
+    #Gather {
+        .cls-1 {
+            &:nth-child(1) {
+                @include fadeIn;
+                left: 20px;
+                // transform:translateX(-30px);
+            }
+
+            &:nth-child(5) {
+                @include fadeIn(0.5);
+                // transform:translateY(-30px);
+            }
+
+            &:nth-child(2) {
+                @include fadeIn(0.75);
+                // transform:translateX(30px);
+            }
+
+            &:nth-child(3) {
+                @include fadeIn(1);
+            }
+
+            &:nth-child(4) {
+                @include fadeIn(1.25);
+            }
+        }
+    }
+
+    #Grow {
+        .cls-1 {
+            &:nth-child(1) {
+                fill: red;
+            }
+
+            &:nth-child(2) {
+                fill: green;
+            }
+
+            &:nth-child(3) {}
+        }
+    }
+
+    #Go {
+        .cls-1:nth-child(1) {
+            fill: red;
+        }
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    overflow: visible;
+    padding: 2em;
+    position: relative;
+}
+
+#discipleship {
+    background-color: #545454;
+}
+
+#values {
+    background-color: #cecece;
+}
+
+#ehd {
+    background-color: white;
+
+    .cls-1 {
+        fill: url(#radial-gradient-2);
+    }
+
+    .cls-1,
+    .cls-2,
+    .cls-3 {
+        mix-blend-mode: multiply;
+    }
+
+    .cls-4 {
+        fill: url(#linear-gradient);
+    }
+
+    .cls-5 {
+        fill: url(#New_Gradient_Swatch_1);
+    }
+
+    .cls-2 {
+        fill: #595a5c;
+        opacity: .5;
+    }
+
+    .cls-6 {
+        fill: url(#linear-gradient-8);
+    }
+
+    .cls-7 {
+        fill: url(#linear-gradient-9);
+    }
+
+    .cls-8 {
+        fill: url(#linear-gradient-3);
+    }
+
+    .cls-9 {
+        fill: url(#linear-gradient-4);
+    }
+
+    .cls-10 {
+        fill: url(#linear-gradient-2);
+    }
+
+    .cls-11 {
+        fill: url(#linear-gradient-6);
+    }
+
+    .cls-12 {
+        fill: url(#linear-gradient-7);
+    }
+
+    .cls-13 {
+        fill: url(#linear-gradient-5);
+    }
+
+    .cls-3 {
+        fill: url(#radial-gradient);
+    }
+
+    .cls-14 {
+        isolation: isolate;
+    }
+
+    .cls-15 {
+        fill: url(#New_Gradient_Swatch_1-5);
+    }
+
+    .cls-16 {
+        fill: url(#New_Gradient_Swatch_1-8);
+    }
+
+    .cls-17 {
+        fill: url(#New_Gradient_Swatch_1-2);
+    }
+
+    .cls-18 {
+        fill: url(#New_Gradient_Swatch_1-3);
+    }
+
+    .cls-19 {
+        fill: url(#New_Gradient_Swatch_1-6);
+    }
+
+    .cls-20 {
+        fill: url(#New_Gradient_Swatch_1-9);
+    }
+
+    .cls-21 {
+        fill: url(#New_Gradient_Swatch_1-4);
+    }
+
+    .cls-22 {
+        fill: url(#New_Gradient_Swatch_1-7);
+    }
+}
