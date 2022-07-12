@@ -535,7 +535,7 @@ function hmrAcceptRun(bundle, id) {
 var _mainScss = require("../sass/main.scss");
 var _vendors = require("./modules/vendors");
 (0, _vendors.sayHello)();
-console.log("hello world!");
+console.log("hello world?");
 
 },{"./modules/vendors":"5PTFQ","../sass/main.scss":"5Izhf"}],"5PTFQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

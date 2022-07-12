@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    overflow: visible;
+    padding: 2em;
+    position: relative;
+}
+svg {
+    width: 10em;
+    height: 10em;
+    transition: all 0.2s ease;
+    position: relative;
+
+    .cls-1 {
+        position: absolute;
+        stroke: white;
+        stroke-width: 5px;
+        stroke-miterlimit: 10;
+        fill: #003a5d;
+    }
+}
+#discipleship {
+    background-color: #545454;
+}
+#values {
+    background-color: #cecece;
+}
+#ehd {
+    background-color: white;
+}
