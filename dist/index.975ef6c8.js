@@ -532,11 +532,12 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
+var _mainScss = require("../sass/main.scss");
 var _vendors = require("./modules/vendors");
 (0, _vendors.sayHello)();
 console.log("hello world!");
 
-},{"./modules/vendors":"5PTFQ"}],"5PTFQ":[function(require,module,exports) {
+},{"./modules/vendors":"5PTFQ","../sass/main.scss":"5Izhf"}],"5PTFQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "sayHello", ()=>sayHello);
@@ -574,6 +575,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8660")
+},{}],"5Izhf":[function() {},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8660")
 
 //# sourceMappingURL=index.975ef6c8.js.map
