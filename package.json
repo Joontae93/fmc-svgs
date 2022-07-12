@@ -95,6 +95,7 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
     "parcel": "^2.6.2"
   }
 }
