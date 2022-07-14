@@ -1,3 +1,2 @@
-export function sayHello() {
-	console.log('hello from vendors.js');
-}
+import Snap from 'snapsvg';
+export var s = Snap();

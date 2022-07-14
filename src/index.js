@@ -1,5 +1,9 @@
 import '../sass/main.scss';
-import { sayHello } from './modules/vendors';
+import { animateGather } from './modules/discipleship';
 
-sayHello();
-console.log('hello world?');
+function init() {
+	console.log('hello there!');
+	animateGather();
+}
+
+init();
